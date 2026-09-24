@@ -26,10 +26,10 @@ walls, Jev finds it in 8.
 
 ![Jev on a walled map wandering near the treasure and ending two cells away with a wall in between](docs/walls.gif)
 
-**Full recordings:**
+**Full recordings** (GitHub can't play these in the browser, so the links download the files):
 
-- [no_walls.mov](docs/no_walls.mov): 12 games without walls (1 min 28 s).
-- [with_walls.mov](docs/with_walls.mov): the 11 walled seeds from the table below (3 min 35 s).
+- [no_walls.mov](docs/no_walls.mov) (download, 2.2 MB): 12 games without walls (1 min 28 s).
+- [with_walls.mov](docs/with_walls.mov) (download, 8.4 MB): the 11 walled seeds from the table below (3 min 35 s).
   These runs used a `--notify_stuck` flag that has since been removed; it made no difference
   to which maps Jev solved.
 
