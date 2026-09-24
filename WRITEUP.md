@@ -11,6 +11,28 @@ possible. The logs show why: Jev reads where the treasure is correctly, then wal
 straight into whatever wall is in the way. Open maps have one weak spot of their own:
 right next to the treasure, Jev sometimes mixes up left and right.
 
+## Watch it
+
+Recorded runs, cropped to the map. The status line under each map shows Jev's pick,
+its confidence and the response time for every move.
+
+**No walls** · seed `880674`, found in 22 moves, the fewest possible:
+
+![Jev on an open map heading straight for the treasure and finding it in 22 moves](docs/no_walls.gif)
+
+**Walls** · seed `168445`, where the treasure is only 8 moves away (sped up 1.5×). After
+86 moves Jev is two cells from `$` with a wall between them. On the same map without
+walls, Jev finds it in 8.
+
+![Jev on a walled map wandering near the treasure and ending two cells away with a wall in between](docs/walls.gif)
+
+**Full recordings:**
+
+- [no_walls.mov](docs/no_walls.mov): 12 games without walls (1 min 28 s).
+- [with_walls.mov](docs/with_walls.mov): the 11 walled seeds from the table below (3 min 35 s).
+  These runs used a `--notify_stuck` flag that has since been removed; it made no difference
+  to which maps Jev solved.
+
 ## At a glance
 
 | | No walls | Walls (25%) |

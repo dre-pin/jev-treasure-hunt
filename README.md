@@ -1,18 +1,15 @@
 # jev-treasure-hunt
 
+![Jev playing two maps side by side: on the open map it walks straight to the treasure in 22 moves; on the walled map the treasure is 8 moves away but Jev needs 73 moves to reach it](docs/hero.gif)
+
 A terminal treasure hunt on a 30x30 grid. Steer `@` onto the `$` yourself with
 the arrow keys, or hand the controls to the Jev model and watch it play one
 typed decision at a time.
 
-```
-##############################
-#............................#
-#...@........................#
-#............................#
-#.................$..........#
-...
-##############################
-```
+**How well does Jev play?** On open maps it finds the treasure 96% of the time,
+usually in the fewest moves possible. Add walls and that drops to 24%. See
+**[WRITEUP.md](WRITEUP.md)** for the findings and performance: why walls break
+it, a left/right mix-up right next to the treasure, and what to try next.
 
 ## Setup
 
@@ -88,3 +85,5 @@ For Jev, `Player` shows the model version the API reports answering with.
 
 - `game.py` – the game, rendering, and both players.
 - `jev_client.py` – `.env` loading and the TypeSafe client for the Jev model.
+- `WRITEUP.md` – findings: how Jev performs with and without walls.
+- `docs/` – GIFs used in the README and writeup.
